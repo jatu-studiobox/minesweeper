@@ -13,17 +13,22 @@
     <script src="app.js" charset="utf-8"></script>
 </head>
 <body>
-    <div class="flex-container">
-        <div class="header-flag">
-            <div>🚩</div><div id="bombAmountMonitor" class="display-flag"></div>
+    <div class="global-area">
+        <div class="header-title">
+            Minesweeper
         </div>
-        <div>
-            <div><button type="button" id="btnStatus" class="button-status">😊</button></div>
+        <div class="flex-container">
+            <div class="header-flag">
+                <div>🚩</div><div id="bombAmountMonitor" class="display-flag"></div>
+            </div>
+            <div>
+                <div><button type="button" id="btnStatus" class="button-status">😊</button></div>
+            </div>
+            <div class="header-time">
+                <div>⏲️</div><div class="display-time"><span id="minutesTimer">00</span>:<span id="secondsTimer">00</span></div>
+            </div>
         </div>
-        <div class="header-time">
-            <div>⏲️</div><div class="display-time"><span id="minutesTimer">00</span>:<span id="secondsTimer">00</span></div>
-        </div>
+        <div class="grid"></div>
     </div>
-    <div class="grid"></div>
 </body>
 </html>

@@ -3,10 +3,26 @@ body {
     font-family: 'Silkscreen', cursive;
 }
 
+.global-area {
+    width: 400px;
+}
+
+.header-title {
+    width: 400px;
+    background-color: navy;
+    border: 10px solid silver;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
 .flex-container {
     width: 400px;
     background-color: silver;
-    border: 10px solid silver;
+    border-left: 10px solid silver;
+    border-right: 10px solid silver;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
