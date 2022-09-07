@@ -8,6 +8,12 @@ document.addEventListener("DOMContentLoaded", () => {
     let flags = 0;
     let squares = [];
     let isGameOver = false;
+    let kickOff = true;
+
+    const minutesTimer = document.getElementById("minutesTimer");
+    const secondsTimer = document.getElementById("secondsTimer");
+    let totalSeconds = 0;
+    let timeId;
 
     // create Board
     function createBoard() {
@@ -29,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // normal click
             square.addEventListener('click', (e) => {
+                startTrigger();
                 click(square);
             });
 
@@ -36,12 +43,14 @@ document.addEventListener("DOMContentLoaded", () => {
             // add function at build-in 'oncontextmenu'
             square.oncontextmenu = function (e) {
                 e.preventDefault();
+                startTrigger();
                 checkFlag(square);
             }
 
             // double click
             square.addEventListener('dblclick', (e) => {
                 e.preventDefault();
+                startTrigger();
                 doubleClick(square);
                 clearSelection();
             });
@@ -78,10 +87,35 @@ document.addEventListener("DOMContentLoaded", () => {
                 // console.log(squares[i]);
             }
         }
+
+        btnStatus.addEventListener('click', () => {
+            location.reload();
+        });
+
+        // Set display flag count
         setBombMonitor();
     }
 
     createBoard();
+
+    function startTrigger() {
+        // check if click off
+        if (kickOff) {
+            // start Timer
+            timeId = setInterval(startTimer, 1000);
+            kickOff = false;
+        }
+    }
+
+    function startTimer() {
+        ++totalSeconds;
+        secondsTimer.innerHTML = String(totalSeconds % 60).padStart(2, '0');
+        minutesTimer.innerHTML = String(parseInt(totalSeconds / 60)).padStart(2, '0');
+    }
+
+    function stopTimer() {
+        clearInterval(timeId);
+    }
 
     // for clear text selection
     function clearSelection() {
@@ -93,6 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    // for set display remain marked flags
     function setBombMonitor() {
         // set default display bomb amount monitor
         bombAmountMonitor.innerHTML = String(bombAmount - flags).padStart(3, '0');
@@ -316,6 +351,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // game over
     function gameOver(square) {
         console.log('BOOM! Game Over!');
+        stopTimer();
         isGameOver = true;
 
         // show ALL the bombs
@@ -344,6 +380,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             if (matches == bombAmount) {
                 console.log("You WIN!");
+                stopTimer();
                 btnStatus.innerHTML = '😄';
                 gameOver = true;
             }
