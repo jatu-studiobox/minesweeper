@@ -4,11 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b71181a14c.js" crossorigin="anonymous"></script>
     <title>Minesweeper</title>
     <link rel="stylesheet" href="style.css">
     <script src="app.js" charset="utf-8"></script>
 </head>
 <body>
+    <div class="flex-container">
+        <div class="header-flag">
+            <div>🚩</div><div id="bombAmountMonitor" class="display-flag"></div>
+        </div>
+        <div>
+            <div><button type="button" id="btnStatus" class="button-status">😊</button></div>
+        </div>
+        <div class="header-time">
+            <div>⏲️</div><div id="timeMonitor" class="display-time">00:00</div>
+        </div>
+    </div>
     <div class="grid"></div>
 </body>
 </html>

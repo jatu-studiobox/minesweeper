@@ -1,23 +1,146 @@
+body {
+    background-color: black;
+    font-family: 'Silkscreen', cursive;
+}
+
+.flex-container {
+    width: 400px;
+    background-color: silver;
+    border: 10px solid silver;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.flex-container>div {
+    font-size: 30px;
+}
+
+.header-flag {
+    width: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.header-time {
+    width: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.button-status {
+    display: block;  
+    height: 100%;
+    width: 100%;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.display-flag {
+    background-color: black;
+    color: red;
+    padding: 0px 5px;
+}
+
+.display-time {
+    background-color: black;
+    color: red;
+    padding: 0px 5px;
+    float: right;
+}
+
 .grid {
     height: 400px;
     width: 400px;
     display: flex;
     flex-wrap: wrap;
     background-color: grey;
+    border: 10px solid silver;
 }
 
 .grid div {
     height: 40px;
     width: 40px;
+    text-align: center;
+    background-color: silver;
+    box-sizing: border-box;
+    border: outset 4px;
+    cursor: pointer;
+}
+
+.grid div:hover {
+    background-color: rgb(224, 224, 224);
 }
 
 .checked {
-    background-color: red;
-    text-align: center;
-    line-height: 40px;
+    background-color: silver !important;
+    border: solid 1px grey !important;
+    cursor: default;
 }
 
-.bomb {
+.checked:hover {
+    background-color: silver;
+    cursor: default !important;
+}
+
+.flag {
+    line-height: 30px;
+    font-size: 1.2em;
+}
+
+.block-bomb {
+    line-height: 35px;
+    font-size: 1.5em;
     background-color: orange;
 }
 
+.block-number {
+    line-height: 35px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.boom {
+    background-color: red !important;
+}
+
+.false-flag {
+    background-color: red !important;
+    border: solid 1px grey !important;
+    line-height: 35px !important;
+}
+
+.color1 {
+    color: blue;
+}
+
+.color2 {
+    color: green;
+}
+
+.color3 {
+    color: red;
+}
+
+.color4 {
+    color: navy;
+}
+
+.color5 {
+    color: brown;
+}
+
+.color6 {
+    color: teal;
+}
+
+.color7 {
+    color: purple;
+}
+
+.color8 {
+    color: grey;
+}
