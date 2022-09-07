@@ -1,4 +1,4 @@
-# Minesweeper Web Game
+# 🚩 Minesweeper Web Game 💣
 This is my practice for build a simplified game of web page game Minesweeper using vanilla JavaScript.
 
 I follow the teaching of Ania Kubow. [See references](#references)
@@ -15,3 +15,6 @@ I follow the teaching of Ania Kubow. [See references](#references)
 ## References
 * [Traversy Media: Build Minesweeper with JavaScript](https://www.youtube.com/watch?v=W0No1JDc6vE)
 * [GitHub Ania Kubow: Minesweeper using the Recursion Algorithm](https://github.com/kubowania/minesweeper])
+
+## Issues
+If you have any issues, please don't mind to create. Thank you very much. 😊
