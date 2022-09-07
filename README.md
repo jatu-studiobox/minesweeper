@@ -1,4 +1,4 @@
-# Web Game Minesweeper
+# Minesweeper Web Game
 This is my practice for build a simplified game of web page game Minesweeper using vanilla JavaScript.
 
 I follow the teaching of Ania Kubow at below reference links.
