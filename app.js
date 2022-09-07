@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const emptyArray = Array((width * width) - bombAmount).fill('valid');
         // join arrays
         const gameArray = emptyArray.concat(bombsArray);
-        // shuffled array by use 
+        // shuffled array by use built-in array sort function with Math random function
         const shuffledArray = gameArray.sort(() => Math.random() - 0.5);
 
         for (let i = 0; i < width * width; i++) {
