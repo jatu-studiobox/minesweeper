@@ -1,7 +1,7 @@
 # Minesweeper Web Game
 This is my practice for build a simplified game of web page game Minesweeper using vanilla JavaScript.
 
-I follow the teaching of Ania Kubow (see references)
+I follow the teaching of Ania Kubow. [See references](#references)
 
 ## Play at
 [https://jatu-studiobox.github.io/minesweeper/](https://jatu-studiobox.github.io/minesweeper/)
