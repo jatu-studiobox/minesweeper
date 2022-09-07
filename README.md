@@ -3,10 +3,9 @@ This is my practice for build a simplified game of web page game Minesweeper usi
 
 I follow the teaching of Ania Kubow at below reference links.
 
-(Traversy Media: Build Minesweeper with JavaScript)[https://www.youtube.com/watch?v=W0No1JDc6vE]
+[Traversy Media: Build Minesweeper with JavaScript](https://www.youtube.com/watch?v=W0No1JDc6vE)
 
-(Ania Kubow: Minesweeper using the Recursion Algorithm)[https://github.com/kubowania/minesweeper]
-
+[GitHub Ania Kubow: Minesweeper using the Recursion Algorithm](https://github.com/kubowania/minesweeper])
 ## Additional challenges and fixed some bugs
 
 * Fixed display bomb count at the corner area.
