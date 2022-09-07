@@ -18,3 +18,6 @@ I follow the teaching of Ania Kubow. [See references](#references)
 
 ## Issues
 If you have any issues, please don't mind to create. Thank you very much. 😊
+
+## Game Wiki
+[See game wiki](https://github.com/jatu-studiobox/minesweeper/wiki)
