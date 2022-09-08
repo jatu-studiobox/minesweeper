@@ -3,6 +3,8 @@ This is my practice by using vanilla JavaScript to build a simplified web Minesw
 
 I follow the teaching of Ania Kubow. [See references](#references)
 
+![Minesweeper](https://user-images.githubusercontent.com/43282496/188933627-a0f5271b-de84-437e-88c5-4cd432fd1c2d.png)
+
 ## Play at
 [https://jatu-studiobox.github.io/minesweeper/](https://jatu-studiobox.github.io/minesweeper/)
 
